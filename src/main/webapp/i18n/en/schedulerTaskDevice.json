@@ -1,0 +1,36 @@
+{
+  "automationProfessionalApp": {
+    "schedulerTaskDevice": {
+      "home": {
+        "title": "Scheduler Task Devices",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Scheduler Task Device",
+        "createOrEditLabel": "Create or edit a Scheduler Task Device",
+        "search": "Search for Scheduler Task Device",
+        "notFound": "No Scheduler Task Devices found"
+      },
+      "created": "A new Scheduler Task Device is created with identifier {{ param }}",
+      "updated": "A Scheduler Task Device is updated with identifier {{ param }}",
+      "deleted": "A Scheduler Task Device is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Scheduler Task Device {{ id }}?"
+      },
+      "detail": {
+        "title": "Scheduler Task Device"
+      },
+      "id": "ID",
+      "startTime": "Start Time",
+      "endTime": "End Time",
+      "countFrom": "Count From",
+      "countTo": "Count To",
+      "point": "Point",
+      "lastUpdate": "Last Update",
+      "owner": "Owner",
+      "status": "Status",
+      "schedulerTaskDeviceValues": "Scheduler Task Device Values",
+      "schedulers": "Schedulers",
+      "tasks": "Tasks",
+      "devices": "Devices"
+    }
+  }
+}

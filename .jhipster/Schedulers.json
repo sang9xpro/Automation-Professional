@@ -1,0 +1,61 @@
+{
+  "name": "Schedulers",
+  "fields": [
+    {
+      "fieldName": "url",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "title",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "otherSource",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "count",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "lastUpdate",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "owner",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "SchedulerStatus",
+      "fieldValues": "Open,Processing,Waiting,Completed"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "schedulerValue",
+      "otherEntityRelationshipName": "schedulers",
+      "relationshipName": "schedulerValue",
+      "otherEntityField": "schedulerId"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "schedulerTaskDevice",
+      "otherEntityRelationshipName": "schedulers",
+      "relationshipName": "schedulerTaskDevice",
+      "otherEntityField": "schedulerId"
+    }
+  ],
+  "entityTableName": "schedulers",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "searchEngine": "elasticsearch",
+  "changelogDate": "20210407040015"
+}

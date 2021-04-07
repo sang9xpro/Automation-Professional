@@ -1,0 +1,26 @@
+{
+  "automationProfessionalApp": {
+    "mostOfContFields": {
+      "home": {
+        "title": "Most Of Cont Fields",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Most Of Cont Fields",
+        "createOrEditLabel": "Create or edit a Most Of Cont Fields",
+        "search": "Search for Most Of Cont Fields",
+        "notFound": "No Most Of Cont Fields found"
+      },
+      "created": "A new Most Of Cont Fields is created with identifier {{ param }}",
+      "updated": "A Most Of Cont Fields is updated with identifier {{ param }}",
+      "deleted": "A Most Of Cont Fields is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Most Of Cont Fields {{ id }}?"
+      },
+      "detail": {
+        "title": "Most Of Cont Fields"
+      },
+      "id": "ID",
+      "fieldName": "Field Name",
+      "mostOfContValues": "Most Of Cont Values"
+    }
+  }
+}

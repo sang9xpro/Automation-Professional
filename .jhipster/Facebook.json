@@ -1,0 +1,56 @@
+{
+  "name": "Facebook",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "url",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "idOnFb",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "type",
+      "fieldType": "FbType",
+      "fieldValues": "Post,People,Image,Video,Page,Location,Group"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "country",
+      "otherEntityRelationshipName": "facebook",
+      "relationshipName": "country",
+      "ownerSide": true
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "facebookValues",
+      "otherEntityRelationshipName": "facebook",
+      "relationshipName": "facebookValues",
+      "otherEntityField": "facebookId"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "mostOfContent",
+      "otherEntityRelationshipName": "facebook",
+      "relationshipName": "mostOfContent",
+      "otherEntityField": "facebookId"
+    }
+  ],
+  "entityTableName": "facebook",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "searchEngine": "elasticsearch",
+  "changelogDate": "20210407040027"
+}

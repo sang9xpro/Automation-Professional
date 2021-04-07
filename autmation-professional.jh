@@ -1,0 +1,288 @@
+
+entity Loggers {
+    status String,
+    logDetail Blob,
+    lastUpdate Instant
+}
+
+entity LoggersFields {
+	fieldName String
+}
+
+entity LoggersValues {
+    value String
+}
+
+relationship OneToMany {
+	Loggers {LoggersValues(loggerId)} to LoggersValues,
+	LoggersFields {LoggersValues(fieldId)} to LoggersValues
+}
+
+entity History {
+	url String,
+    taskId Integer,
+    deviceId Integer,
+    accountId Integer,
+    lastUpdate Instant
+}
+
+entity HistoryFields {
+	fieldName String
+}
+
+entity HistoryValues {
+    value String
+}
+relationship OneToMany {
+	History {HistoryValues(historyId)} to HistoryValues,
+	HistoryFields {HistoryValues(fieldsId)} to HistoryValues
+}
+
+entity Comment {
+	content  String,
+    image Blob,
+    social Social,
+    owner String
+}
+
+entity CommentFields {
+	fieldName String
+}
+
+entity CommentValues {
+    value String
+}
+
+relationship OneToMany {
+	Comment {CommentValues(commentId)} to CommentValues,
+	CommentFields {CommentValues(feildId)} to CommentValues
+}
+
+enum DeviceStatus {
+	Online,
+    Offline
+}
+
+enum DeviceType{
+    MOBILE,
+    COMPUTER,
+    TABLET,
+    VPS,
+    VMW,
+    ELUMATOR
+}
+
+entity Accounts {
+	userName String,
+    password String,
+    type Social,
+    urlLogin String,
+    profileFirefox String,
+    profileChrome String,
+    lastUpdate Instant,
+    owner String,
+    actived Integer min (1) max (1)
+}
+
+entity AccountFields {
+	fieldName String
+}
+
+entity AccountValues {
+    value String
+}
+relationship OneToMany {
+	Accounts {AccountValues(accountId)} to AccountValues,
+	AccountFields {AccountValues(fieldId)} to AccountValues
+}
+
+enum Social {
+	Facebook,
+    Youtube,
+    Instagram,
+    Tiktok,
+    Other
+}
+
+entity Schedulers {
+    url String,
+    title String,
+    otherSource String,
+    count Integer,
+    lastUpdate Instant,
+    owner String,
+    status SchedulerStatus
+}
+
+entity SchedulerFields {
+	fieldName String
+}
+
+entity SchedulerValue {
+	value String
+}
+
+relationship OneToMany {
+	Schedulers {SchedulerValue(schedulerId)} to SchedulerValue,
+	SchedulerFields {SchedulerValue(fieldId)} to SchedulerValue
+}
+
+entity Tasks {
+	taskName String,
+    description String,
+    source String,
+    price Double,
+    social Social,
+    type TaskType
+}
+
+entity TaskFields {
+	fieldName String
+}
+
+entity TaskValues {
+	value String
+}
+
+relationship OneToMany {
+	Tasks {TaskValues(taskId)} to TaskValues,
+	TaskFields {TaskValues(fieldId)} to TaskValues
+}
+
+entity Devices {
+    ipAddress String,
+    macAddress String,
+    os String,
+    deviceType DeviceType,
+    status DeviceStatus,
+    lastUpdate Instant,
+    owner String
+}
+
+entity DevicesFields {
+	fieldsName String
+}
+
+entity DeviceValues {
+    value String
+}
+
+relationship OneToMany {
+	Devices {DeviceValues(deviceId)} to DeviceValues,
+	DevicesFields {DeviceValues(feildId)} to DeviceValues
+}
+
+entity SchedulerTaskDevice {
+    startTime Instant,
+    endTime Instant,
+    countFrom Integer,
+    countTo Integer,
+    point Double,
+    lastUpdate Instant,
+    owner String,
+    status SchedulerStatus
+}
+
+entity SchedulerTaskDeviceFields {
+	fieldName String
+}
+entity SchedulerTaskDeviceValues {
+	value String
+}
+
+relationship OneToMany {
+	SchedulerTaskDevice {SchedulerTaskDeviceValues(schedulerTaskDeviceId)} to SchedulerTaskDeviceValues,
+	SchedulerTaskDeviceFields {SchedulerTaskDeviceValues(feildId)} to SchedulerTaskDeviceValues
+}
+
+
+entity Facebook {
+	name String,
+    url String,
+    idOnFb String,
+    type FbType
+}
+
+entity FacebookFields {
+	fieldName String
+}
+
+entity FacebookValues {
+    value String
+}
+
+relationship OneToMany {
+	Facebook {FacebookValues(facebookId)} to FacebookValues,
+	FacebookFields {FacebookValues(feildId)} to FacebookValues
+}
+
+entity MostOfContent {
+	urlOriginal String,
+    contentText String,
+    postTime Instant,
+    numberLike Integer,
+    numberComment Integer
+}
+
+entity MostOfContFields {
+	fieldName String
+}
+
+entity MostOfContValues {
+    value String
+}
+
+relationship OneToMany {
+	MostOfContent {MostOfContValues(mostOfContentId)} to MostOfContValues,
+	MostOfContFields {MostOfContValues(feildId)} to MostOfContValues
+}
+enum FbType {
+	Post,
+    People,
+	Image,
+    Video,
+    Page,
+    Location,
+    Group
+}
+
+
+enum TaskType {
+	Stream,
+    NonStream
+}
+
+entity Country {
+	name String required,
+    code String required
+}
+
+enum SchedulerStatus {
+	Open, Processing, Waiting, Completed
+}
+
+relationship ManyToMany {
+	Devices {accounts} to Accounts{devices},
+    Devices {schedulerTaskDevice} to SchedulerTaskDevice{devices}
+}
+
+
+relationship OneToMany {
+	Schedulers {schedulerTaskDevice(schedulerId)} to SchedulerTaskDevice,
+    Tasks {schedulerTaskDevice(taskId)} to SchedulerTaskDevice,
+    Devices {loggers(deviceId)} to Loggers,
+    Facebook {MostOfContent (facebookId)} to MostOfContent,
+    MostOfContent {comment(mostOfContentId)} to Comment
+}
+
+relationship OneToOne {
+	Devices to Country,
+    Accounts to Country,
+    Facebook to Country
+}
+
+dto * with mapstruct
+paginate Devices with infinite-scroll
+paginate * with pagination except Devices
+service * with serviceImpl
+search * with elasticsearch

@@ -1,0 +1,26 @@
+{
+  "automationProfessionalApp": {
+    "devicesFields": {
+      "home": {
+        "title": "Devices Fields",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Thêm mới một Devices Fields",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Devices Fields",
+        "search": "Tìm Devices Fields",
+        "notFound": "No Devices Fields found"
+      },
+      "created": "Một Devices Fields mới được tạo với định danh {{ param }}",
+      "updated": "Một Devices Fields cập nhật với định danh {{ param }}",
+      "deleted": "Một Devices Fields đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Devices Fields {{ id }}?"
+      },
+      "detail": {
+        "title": "Devices Fields"
+      },
+      "id": "ID",
+      "fieldsName": "Fields Name",
+      "deviceValues": "Device Values"
+    }
+  }
+}

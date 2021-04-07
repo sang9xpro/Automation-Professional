@@ -1,0 +1,49 @@
+{
+  "name": "Country",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "code",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "devices",
+      "otherEntityRelationshipName": "country",
+      "relationshipName": "devices",
+      "ownerSide": false
+    },
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "accounts",
+      "otherEntityRelationshipName": "country",
+      "relationshipName": "accounts",
+      "ownerSide": false
+    },
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "facebook",
+      "otherEntityRelationshipName": "country",
+      "relationshipName": "facebook",
+      "ownerSide": false
+    }
+  ],
+  "entityTableName": "country",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "searchEngine": "elasticsearch",
+  "changelogDate": "20210407040033"
+}

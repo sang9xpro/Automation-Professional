@@ -1,0 +1,11 @@
+{
+  "automationProfessionalApp": {
+    "SchedulerStatus": {
+      "null": "",
+      "Open": "Open",
+      "Processing": "Processing",
+      "Waiting": "Waiting",
+      "Completed": "Completed"
+    }
+  }
+}

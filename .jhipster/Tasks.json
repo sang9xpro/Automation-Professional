@@ -1,0 +1,58 @@
+{
+  "name": "Tasks",
+  "fields": [
+    {
+      "fieldName": "taskName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "source",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "price",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "social",
+      "fieldType": "Social",
+      "fieldValues": "Facebook,Youtube,Instagram,Tiktok,Other"
+    },
+    {
+      "fieldName": "type",
+      "fieldType": "TaskType",
+      "fieldValues": "Stream,NonStream"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "taskValues",
+      "otherEntityRelationshipName": "tasks",
+      "relationshipName": "taskValues",
+      "otherEntityField": "taskId"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "schedulerTaskDevice",
+      "otherEntityRelationshipName": "tasks",
+      "relationshipName": "schedulerTaskDevice",
+      "otherEntityField": "taskId"
+    }
+  ],
+  "entityTableName": "tasks",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "searchEngine": "elasticsearch",
+  "changelogDate": "20210407040018"
+}

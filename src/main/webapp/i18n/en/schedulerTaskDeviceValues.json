@@ -1,0 +1,27 @@
+{
+  "automationProfessionalApp": {
+    "schedulerTaskDeviceValues": {
+      "home": {
+        "title": "Scheduler Task Device Values",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Scheduler Task Device Values",
+        "createOrEditLabel": "Create or edit a Scheduler Task Device Values",
+        "search": "Search for Scheduler Task Device Values",
+        "notFound": "No Scheduler Task Device Values found"
+      },
+      "created": "A new Scheduler Task Device Values is created with identifier {{ param }}",
+      "updated": "A Scheduler Task Device Values is updated with identifier {{ param }}",
+      "deleted": "A Scheduler Task Device Values is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Scheduler Task Device Values {{ id }}?"
+      },
+      "detail": {
+        "title": "Scheduler Task Device Values"
+      },
+      "id": "ID",
+      "value": "Value",
+      "schedulerTaskDevice": "Scheduler Task Device",
+      "schedulerTaskDeviceFields": "Scheduler Task Device Fields"
+    }
+  }
+}

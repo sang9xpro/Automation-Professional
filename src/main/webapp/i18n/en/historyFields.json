@@ -1,0 +1,26 @@
+{
+  "automationProfessionalApp": {
+    "historyFields": {
+      "home": {
+        "title": "History Fields",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new History Fields",
+        "createOrEditLabel": "Create or edit a History Fields",
+        "search": "Search for History Fields",
+        "notFound": "No History Fields found"
+      },
+      "created": "A new History Fields is created with identifier {{ param }}",
+      "updated": "A History Fields is updated with identifier {{ param }}",
+      "deleted": "A History Fields is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete History Fields {{ id }}?"
+      },
+      "detail": {
+        "title": "History Fields"
+      },
+      "id": "ID",
+      "fieldName": "Field Name",
+      "historyValues": "History Values"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "automationProfessionalApp": {
+    "facebook": {
+      "home": {
+        "title": "Facebooks",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Thêm mới một Facebook",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Facebook",
+        "search": "Tìm Facebook",
+        "notFound": "No Facebooks found"
+      },
+      "created": "Một Facebook mới được tạo với định danh {{ param }}",
+      "updated": "Một Facebook cập nhật với định danh {{ param }}",
+      "deleted": "Một Facebook đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Facebook {{ id }}?"
+      },
+      "detail": {
+        "title": "Facebook"
+      },
+      "id": "ID",
+      "name": "Name",
+      "url": "Url",
+      "idOnFb": "Id On Fb",
+      "type": "Type",
+      "country": "Country",
+      "facebookValues": "Facebook Values",
+      "mostOfContent": "Most Of Content"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "automationProfessionalApp": {
+    "facebookFields": {
+      "home": {
+        "title": "Facebook Fields",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Facebook Fields",
+        "createOrEditLabel": "Create or edit a Facebook Fields",
+        "search": "Search for Facebook Fields",
+        "notFound": "No Facebook Fields found"
+      },
+      "created": "A new Facebook Fields is created with identifier {{ param }}",
+      "updated": "A Facebook Fields is updated with identifier {{ param }}",
+      "deleted": "A Facebook Fields is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Facebook Fields {{ id }}?"
+      },
+      "detail": {
+        "title": "Facebook Fields"
+      },
+      "id": "ID",
+      "fieldName": "Field Name",
+      "facebookValues": "Facebook Values"
+    }
+  }
+}

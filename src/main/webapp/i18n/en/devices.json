@@ -1,0 +1,36 @@
+{
+  "automationProfessionalApp": {
+    "devices": {
+      "home": {
+        "title": "Devices",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Devices",
+        "createOrEditLabel": "Create or edit a Devices",
+        "search": "Search for Devices",
+        "notFound": "No Devices found"
+      },
+      "created": "A new Devices is created with identifier {{ param }}",
+      "updated": "A Devices is updated with identifier {{ param }}",
+      "deleted": "A Devices is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Devices {{ id }}?"
+      },
+      "detail": {
+        "title": "Devices"
+      },
+      "id": "ID",
+      "ipAddress": "Ip Address",
+      "macAddress": "Mac Address",
+      "os": "Os",
+      "deviceType": "Device Type",
+      "status": "Status",
+      "lastUpdate": "Last Update",
+      "owner": "Owner",
+      "country": "Country",
+      "deviceValues": "Device Values",
+      "loggers": "Loggers",
+      "accounts": "Accounts",
+      "schedulerTaskDevice": "Scheduler Task Device"
+    }
+  }
+}

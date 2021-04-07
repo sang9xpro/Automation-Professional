@@ -1,0 +1,27 @@
+{
+  "automationProfessionalApp": {
+    "mostOfContValues": {
+      "home": {
+        "title": "Most Of Cont Values",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Thêm mới một Most Of Cont Values",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Most Of Cont Values",
+        "search": "Tìm Most Of Cont Values",
+        "notFound": "No Most Of Cont Values found"
+      },
+      "created": "Một Most Of Cont Values mới được tạo với định danh {{ param }}",
+      "updated": "Một Most Of Cont Values cập nhật với định danh {{ param }}",
+      "deleted": "Một Most Of Cont Values đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Most Of Cont Values {{ id }}?"
+      },
+      "detail": {
+        "title": "Most Of Cont Values"
+      },
+      "id": "ID",
+      "value": "Value",
+      "mostOfContent": "Most Of Content",
+      "mostOfContFields": "Most Of Cont Fields"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "automationProfessionalApp": {
+    "Social": {
+      "null": "",
+      "Facebook": "Facebook",
+      "Youtube": "Youtube",
+      "Instagram": "Instagram",
+      "Tiktok": "Tiktok",
+      "Other": "Other"
+    }
+  }
+}

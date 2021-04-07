@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd">
+    <!--
+        Added the constraints for entity LoggersValues.
+    -->
+    <changeSet id="20210407040005-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="loggers_id"
+                                 baseTableName="loggers_values"
+                                 constraintName="fk_loggers_values__loggers_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="loggers"/>
+
+        <addForeignKeyConstraint baseColumnNames="loggers_fields_id"
+                                 baseTableName="loggers_values"
+                                 constraintName="fk_loggers_values__loggers_fields_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="loggers_fields"/>
+    </changeSet>
+</databaseChangeLog>

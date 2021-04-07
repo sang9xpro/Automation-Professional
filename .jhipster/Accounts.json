@@ -1,0 +1,79 @@
+{
+  "name": "Accounts",
+  "fields": [
+    {
+      "fieldName": "userName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "password",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "type",
+      "fieldType": "Social",
+      "fieldValues": "Facebook,Youtube,Instagram,Tiktok,Other"
+    },
+    {
+      "fieldName": "urlLogin",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "profileFirefox",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "profileChrome",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "lastUpdate",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "owner",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "actived",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["min", "max"],
+      "fieldValidateRulesMin": "1",
+      "fieldValidateRulesMax": "1"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "country",
+      "otherEntityRelationshipName": "accounts",
+      "relationshipName": "country",
+      "ownerSide": true
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "accountValues",
+      "otherEntityRelationshipName": "accounts",
+      "relationshipName": "accountValues",
+      "otherEntityField": "accountId"
+    },
+    {
+      "relationshipType": "many-to-many",
+      "otherEntityName": "devices",
+      "otherEntityRelationshipName": "accounts",
+      "relationshipName": "devices",
+      "ownerSide": false
+    }
+  ],
+  "entityTableName": "accounts",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "searchEngine": "elasticsearch",
+  "changelogDate": "20210407040012"
+}

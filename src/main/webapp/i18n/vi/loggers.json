@@ -1,0 +1,29 @@
+{
+  "automationProfessionalApp": {
+    "loggers": {
+      "home": {
+        "title": "Loggers",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Thêm mới một Loggers",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Loggers",
+        "search": "Tìm Loggers",
+        "notFound": "No Loggers found"
+      },
+      "created": "Một Loggers mới được tạo với định danh {{ param }}",
+      "updated": "Một Loggers cập nhật với định danh {{ param }}",
+      "deleted": "Một Loggers đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Loggers {{ id }}?"
+      },
+      "detail": {
+        "title": "Loggers"
+      },
+      "id": "ID",
+      "status": "Status",
+      "logDetail": "Log Detail",
+      "lastUpdate": "Last Update",
+      "loggersValues": "Loggers Values",
+      "devices": "Devices"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "automationProfessionalApp": {
+    "tasks": {
+      "home": {
+        "title": "Tasks",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Thêm mới một Tasks",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Tasks",
+        "search": "Tìm Tasks",
+        "notFound": "No Tasks found"
+      },
+      "created": "Một Tasks mới được tạo với định danh {{ param }}",
+      "updated": "Một Tasks cập nhật với định danh {{ param }}",
+      "deleted": "Một Tasks đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Tasks {{ id }}?"
+      },
+      "detail": {
+        "title": "Tasks"
+      },
+      "id": "ID",
+      "taskName": "Task Name",
+      "description": "Description",
+      "source": "Source",
+      "price": "Price",
+      "social": "Social",
+      "type": "Type",
+      "taskValues": "Task Values",
+      "schedulerTaskDevice": "Scheduler Task Device"
+    }
+  }
+}

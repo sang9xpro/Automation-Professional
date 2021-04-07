@@ -1,0 +1,27 @@
+{
+  "automationProfessionalApp": {
+    "taskValues": {
+      "home": {
+        "title": "Task Values",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Task Values",
+        "createOrEditLabel": "Create or edit a Task Values",
+        "search": "Search for Task Values",
+        "notFound": "No Task Values found"
+      },
+      "created": "A new Task Values is created with identifier {{ param }}",
+      "updated": "A Task Values is updated with identifier {{ param }}",
+      "deleted": "A Task Values is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Task Values {{ id }}?"
+      },
+      "detail": {
+        "title": "Task Values"
+      },
+      "id": "ID",
+      "value": "Value",
+      "tasks": "Tasks",
+      "taskFields": "Task Fields"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "automationProfessionalApp": {
+    "loggersFields": {
+      "home": {
+        "title": "Loggers Fields",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Loggers Fields",
+        "createOrEditLabel": "Create or edit a Loggers Fields",
+        "search": "Search for Loggers Fields",
+        "notFound": "No Loggers Fields found"
+      },
+      "created": "A new Loggers Fields is created with identifier {{ param }}",
+      "updated": "A Loggers Fields is updated with identifier {{ param }}",
+      "deleted": "A Loggers Fields is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Loggers Fields {{ id }}?"
+      },
+      "detail": {
+        "title": "Loggers Fields"
+      },
+      "id": "ID",
+      "fieldName": "Field Name",
+      "loggersValues": "Loggers Values"
+    }
+  }
+}

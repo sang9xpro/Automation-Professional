@@ -1,0 +1,29 @@
+{
+  "name": "LoggersFields",
+  "fields": [
+    {
+      "fieldName": "fieldName",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "loggersValues",
+      "otherEntityRelationshipName": "loggersFields",
+      "relationshipName": "loggersValues",
+      "otherEntityField": "fieldId"
+    }
+  ],
+  "entityTableName": "loggers_fields",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "searchEngine": "elasticsearch",
+  "changelogDate": "20210407040004"
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd">
+    <!--
+        Added the constraints for entity FacebookValues.
+    -->
+    <changeSet id="20210407040029-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="facebook_id"
+                                 baseTableName="facebook_values"
+                                 constraintName="fk_facebook_values__facebook_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="facebook"/>
+
+        <addForeignKeyConstraint baseColumnNames="facebook_fields_id"
+                                 baseTableName="facebook_values"
+                                 constraintName="fk_facebook_values__facebook_fields_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="facebook_fields"/>
+    </changeSet>
+</databaseChangeLog>

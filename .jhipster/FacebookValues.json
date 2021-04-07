@@ -1,0 +1,34 @@
+{
+  "name": "FacebookValues",
+  "fields": [
+    {
+      "fieldName": "value",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "facebook",
+      "otherEntityRelationshipName": "facebookValues",
+      "relationshipName": "facebook"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "facebookFields",
+      "otherEntityRelationshipName": "facebookValues",
+      "relationshipName": "facebookFields"
+    }
+  ],
+  "entityTableName": "facebook_values",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "searchEngine": "elasticsearch",
+  "changelogDate": "20210407040029"
+}

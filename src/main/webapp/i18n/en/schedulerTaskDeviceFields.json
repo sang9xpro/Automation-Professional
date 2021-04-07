@@ -1,0 +1,26 @@
+{
+  "automationProfessionalApp": {
+    "schedulerTaskDeviceFields": {
+      "home": {
+        "title": "Scheduler Task Device Fields",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Scheduler Task Device Fields",
+        "createOrEditLabel": "Create or edit a Scheduler Task Device Fields",
+        "search": "Search for Scheduler Task Device Fields",
+        "notFound": "No Scheduler Task Device Fields found"
+      },
+      "created": "A new Scheduler Task Device Fields is created with identifier {{ param }}",
+      "updated": "A Scheduler Task Device Fields is updated with identifier {{ param }}",
+      "deleted": "A Scheduler Task Device Fields is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Scheduler Task Device Fields {{ id }}?"
+      },
+      "detail": {
+        "title": "Scheduler Task Device Fields"
+      },
+      "id": "ID",
+      "fieldName": "Field Name",
+      "schedulerTaskDeviceValues": "Scheduler Task Device Values"
+    }
+  }
+}

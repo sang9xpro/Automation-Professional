@@ -1,0 +1,49 @@
+{
+  "name": "Comment",
+  "fields": [
+    {
+      "fieldName": "content",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "image",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "any"
+    },
+    {
+      "fieldName": "social",
+      "fieldType": "Social",
+      "fieldValues": "Facebook,Youtube,Instagram,Tiktok,Other"
+    },
+    {
+      "fieldName": "owner",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "commentValues",
+      "otherEntityRelationshipName": "comment",
+      "relationshipName": "commentValues",
+      "otherEntityField": "commentId"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "mostOfContent",
+      "otherEntityRelationshipName": "comment",
+      "relationshipName": "mostOfContent"
+    }
+  ],
+  "entityTableName": "comment",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "searchEngine": "elasticsearch",
+  "changelogDate": "20210407040009"
+}

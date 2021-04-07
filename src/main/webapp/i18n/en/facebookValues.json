@@ -1,0 +1,27 @@
+{
+  "automationProfessionalApp": {
+    "facebookValues": {
+      "home": {
+        "title": "Facebook Values",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Facebook Values",
+        "createOrEditLabel": "Create or edit a Facebook Values",
+        "search": "Search for Facebook Values",
+        "notFound": "No Facebook Values found"
+      },
+      "created": "A new Facebook Values is created with identifier {{ param }}",
+      "updated": "A Facebook Values is updated with identifier {{ param }}",
+      "deleted": "A Facebook Values is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Facebook Values {{ id }}?"
+      },
+      "detail": {
+        "title": "Facebook Values"
+      },
+      "id": "ID",
+      "value": "Value",
+      "facebook": "Facebook",
+      "facebookFields": "Facebook Fields"
+    }
+  }
+}

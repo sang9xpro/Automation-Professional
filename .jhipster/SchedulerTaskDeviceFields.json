@@ -1,0 +1,29 @@
+{
+  "name": "SchedulerTaskDeviceFields",
+  "fields": [
+    {
+      "fieldName": "fieldName",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "schedulerTaskDeviceValues",
+      "otherEntityRelationshipName": "schedulerTaskDeviceFields",
+      "relationshipName": "schedulerTaskDeviceValues",
+      "otherEntityField": "feildId"
+    }
+  ],
+  "entityTableName": "scheduler_task_device_fields",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "searchEngine": "elasticsearch",
+  "changelogDate": "20210407040025"
+}

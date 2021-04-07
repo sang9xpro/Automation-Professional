@@ -1,0 +1,9 @@
+{
+  "automationProfessionalApp": {
+    "DeviceStatus": {
+      "null": "",
+      "Online": "Online",
+      "Offline": "Offline"
+    }
+  }
+}

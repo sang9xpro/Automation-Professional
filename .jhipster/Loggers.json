@@ -1,0 +1,44 @@
+{
+  "name": "Loggers",
+  "fields": [
+    {
+      "fieldName": "status",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "logDetail",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "any"
+    },
+    {
+      "fieldName": "lastUpdate",
+      "fieldType": "Instant"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "loggersValues",
+      "otherEntityRelationshipName": "loggers",
+      "relationshipName": "loggersValues",
+      "otherEntityField": "loggerId"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "devices",
+      "otherEntityRelationshipName": "loggers",
+      "relationshipName": "devices"
+    }
+  ],
+  "entityTableName": "loggers",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "searchEngine": "elasticsearch",
+  "changelogDate": "20210407040003"
+}

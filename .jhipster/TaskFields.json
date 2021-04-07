@@ -1,0 +1,29 @@
+{
+  "name": "TaskFields",
+  "fields": [
+    {
+      "fieldName": "fieldName",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "taskValues",
+      "otherEntityRelationshipName": "taskFields",
+      "relationshipName": "taskValues",
+      "otherEntityField": "fieldId"
+    }
+  ],
+  "entityTableName": "task_fields",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "searchEngine": "elasticsearch",
+  "changelogDate": "20210407040019"
+}

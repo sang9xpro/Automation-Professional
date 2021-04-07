@@ -1,0 +1,27 @@
+{
+  "automationProfessionalApp": {
+    "schedulerValue": {
+      "home": {
+        "title": "Scheduler Values",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Scheduler Value",
+        "createOrEditLabel": "Create or edit a Scheduler Value",
+        "search": "Search for Scheduler Value",
+        "notFound": "No Scheduler Values found"
+      },
+      "created": "A new Scheduler Value is created with identifier {{ param }}",
+      "updated": "A Scheduler Value is updated with identifier {{ param }}",
+      "deleted": "A Scheduler Value is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Scheduler Value {{ id }}?"
+      },
+      "detail": {
+        "title": "Scheduler Value"
+      },
+      "id": "ID",
+      "value": "Value",
+      "schedulers": "Schedulers",
+      "schedulerFields": "Scheduler Fields"
+    }
+  }
+}

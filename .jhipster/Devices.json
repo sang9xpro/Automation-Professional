@@ -1,0 +1,83 @@
+{
+  "name": "Devices",
+  "fields": [
+    {
+      "fieldName": "ipAddress",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "macAddress",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "os",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "deviceType",
+      "fieldType": "DeviceType",
+      "fieldValues": "MOBILE,COMPUTER,TABLET,VPS,VMW,ELUMATOR"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "DeviceStatus",
+      "fieldValues": "Online,Offline"
+    },
+    {
+      "fieldName": "lastUpdate",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "owner",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "country",
+      "otherEntityRelationshipName": "devices",
+      "relationshipName": "country",
+      "ownerSide": true
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "deviceValues",
+      "otherEntityRelationshipName": "devices",
+      "relationshipName": "deviceValues",
+      "otherEntityField": "deviceId"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "loggers",
+      "otherEntityRelationshipName": "devices",
+      "relationshipName": "loggers",
+      "otherEntityField": "deviceId"
+    },
+    {
+      "relationshipType": "many-to-many",
+      "otherEntityName": "accounts",
+      "otherEntityRelationshipName": "devices",
+      "relationshipName": "accounts",
+      "ownerSide": true
+    },
+    {
+      "relationshipType": "many-to-many",
+      "otherEntityName": "schedulerTaskDevice",
+      "otherEntityRelationshipName": "devices",
+      "relationshipName": "schedulerTaskDevice",
+      "ownerSide": true
+    }
+  ],
+  "entityTableName": "devices",
+  "dto": "mapstruct",
+  "pagination": "infinite-scroll",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "searchEngine": "elasticsearch",
+  "changelogDate": "20210407040021"
+}

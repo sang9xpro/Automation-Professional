@@ -1,0 +1,30 @@
+{
+  "automationProfessionalApp": {
+    "history": {
+      "home": {
+        "title": "Histories",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Thêm mới một History",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật History",
+        "search": "Tìm History",
+        "notFound": "No Histories found"
+      },
+      "created": "Một History mới được tạo với định danh {{ param }}",
+      "updated": "Một History cập nhật với định danh {{ param }}",
+      "deleted": "Một History đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa History {{ id }}?"
+      },
+      "detail": {
+        "title": "History"
+      },
+      "id": "ID",
+      "url": "Url",
+      "taskId": "Task Id",
+      "deviceId": "Device Id",
+      "accountId": "Account Id",
+      "lastUpdate": "Last Update",
+      "historyValues": "History Values"
+    }
+  }
+}
