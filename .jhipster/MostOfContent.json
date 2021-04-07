@@ -1,0 +1,58 @@
+{
+  "name": "MostOfContent",
+  "fields": [
+    {
+      "fieldName": "urlOriginal",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "contentText",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "postTime",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "numberLike",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "numberComment",
+      "fieldType": "Integer"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "mostOfContValues",
+      "otherEntityRelationshipName": "mostOfContent",
+      "relationshipName": "mostOfContValues",
+      "otherEntityField": "mostOfContentId"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "comment",
+      "otherEntityRelationshipName": "mostOfContent",
+      "relationshipName": "comment",
+      "otherEntityField": "mostOfContentId"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "facebook",
+      "otherEntityRelationshipName": "mostOfContent",
+      "relationshipName": "facebook"
+    }
+  ],
+  "entityTableName": "most_of_content",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "searchEngine": "elasticsearch",
+  "changelogDate": "20210407040030"
+}

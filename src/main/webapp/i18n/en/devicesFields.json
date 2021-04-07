@@ -1,0 +1,26 @@
+{
+  "automationProfessionalApp": {
+    "devicesFields": {
+      "home": {
+        "title": "Devices Fields",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Devices Fields",
+        "createOrEditLabel": "Create or edit a Devices Fields",
+        "search": "Search for Devices Fields",
+        "notFound": "No Devices Fields found"
+      },
+      "created": "A new Devices Fields is created with identifier {{ param }}",
+      "updated": "A Devices Fields is updated with identifier {{ param }}",
+      "deleted": "A Devices Fields is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Devices Fields {{ id }}?"
+      },
+      "detail": {
+        "title": "Devices Fields"
+      },
+      "id": "ID",
+      "fieldsName": "Fields Name",
+      "deviceValues": "Device Values"
+    }
+  }
+}

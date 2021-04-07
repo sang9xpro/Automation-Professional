@@ -1,0 +1,26 @@
+{
+  "automationProfessionalApp": {
+    "taskFields": {
+      "home": {
+        "title": "Task Fields",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Task Fields",
+        "createOrEditLabel": "Create or edit a Task Fields",
+        "search": "Search for Task Fields",
+        "notFound": "No Task Fields found"
+      },
+      "created": "A new Task Fields is created with identifier {{ param }}",
+      "updated": "A Task Fields is updated with identifier {{ param }}",
+      "deleted": "A Task Fields is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Task Fields {{ id }}?"
+      },
+      "detail": {
+        "title": "Task Fields"
+      },
+      "id": "ID",
+      "fieldName": "Field Name",
+      "taskValues": "Task Values"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "automationProfessionalApp": {
+    "taskValues": {
+      "home": {
+        "title": "Task Values",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Thêm mới một Task Values",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Task Values",
+        "search": "Tìm Task Values",
+        "notFound": "No Task Values found"
+      },
+      "created": "Một Task Values mới được tạo với định danh {{ param }}",
+      "updated": "Một Task Values cập nhật với định danh {{ param }}",
+      "deleted": "Một Task Values đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Task Values {{ id }}?"
+      },
+      "detail": {
+        "title": "Task Values"
+      },
+      "id": "ID",
+      "value": "Value",
+      "tasks": "Tasks",
+      "taskFields": "Task Fields"
+    }
+  }
+}

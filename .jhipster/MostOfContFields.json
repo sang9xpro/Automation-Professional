@@ -1,0 +1,29 @@
+{
+  "name": "MostOfContFields",
+  "fields": [
+    {
+      "fieldName": "fieldName",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "mostOfContValues",
+      "otherEntityRelationshipName": "mostOfContFields",
+      "relationshipName": "mostOfContValues",
+      "otherEntityField": "feildId"
+    }
+  ],
+  "entityTableName": "most_of_cont_fields",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "searchEngine": "elasticsearch",
+  "changelogDate": "20210407040031"
+}

@@ -1,0 +1,29 @@
+{
+  "name": "DevicesFields",
+  "fields": [
+    {
+      "fieldName": "fieldsName",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "deviceValues",
+      "otherEntityRelationshipName": "devicesFields",
+      "relationshipName": "deviceValues",
+      "otherEntityField": "feildId"
+    }
+  ],
+  "entityTableName": "devices_fields",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "searchEngine": "elasticsearch",
+  "changelogDate": "20210407040022"
+}

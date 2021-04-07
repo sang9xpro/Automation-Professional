@@ -1,0 +1,26 @@
+{
+  "automationProfessionalApp": {
+    "accountFields": {
+      "home": {
+        "title": "Account Fields",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Account Fields",
+        "createOrEditLabel": "Create or edit a Account Fields",
+        "search": "Search for Account Fields",
+        "notFound": "No Account Fields found"
+      },
+      "created": "A new Account Fields is created with identifier {{ param }}",
+      "updated": "A Account Fields is updated with identifier {{ param }}",
+      "deleted": "A Account Fields is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Account Fields {{ id }}?"
+      },
+      "detail": {
+        "title": "Account Fields"
+      },
+      "id": "ID",
+      "fieldName": "Field Name",
+      "accountValues": "Account Values"
+    }
+  }
+}

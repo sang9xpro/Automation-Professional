@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd">
+    <!--
+        Added the constraints for entity Devices.
+    -->
+    <changeSet id="20210407040021-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="country_id"
+                                 baseTableName="devices"
+                                 constraintName="fk_devices__country_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="country"/>
+
+        <addForeignKeyConstraint baseColumnNames="devices_id"
+                                 baseTableName="rel_devices__accounts"
+                                 constraintName="fk_rel_devices__accounts__devices_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="devices"/>
+
+        <addForeignKeyConstraint baseColumnNames="accounts_id"
+                                 baseTableName="rel_devices__accounts"
+                                 constraintName="fk_rel_devices__accounts__accounts_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="accounts"/>
+
+        <addForeignKeyConstraint baseColumnNames="devices_id"
+                                 baseTableName="rel_devices__scheduler_task_device"
+                                 constraintName="fk_rel_devices__scheduler_task_device__devices_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="devices"/>
+
+        <addForeignKeyConstraint baseColumnNames="scheduler_task_device_id"
+                                 baseTableName="rel_devices__scheduler_task_device"
+                                 constraintName="fk_rel_devices__scheduler_task_device__scheduler_task_device_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="scheduler_task_device"/>
+    </changeSet>
+</databaseChangeLog>

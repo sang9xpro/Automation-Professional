@@ -1,0 +1,27 @@
+{
+  "automationProfessionalApp": {
+    "schedulerValue": {
+      "home": {
+        "title": "Scheduler Values",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Thêm mới một Scheduler Value",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Scheduler Value",
+        "search": "Tìm Scheduler Value",
+        "notFound": "No Scheduler Values found"
+      },
+      "created": "Một Scheduler Value mới được tạo với định danh {{ param }}",
+      "updated": "Một Scheduler Value cập nhật với định danh {{ param }}",
+      "deleted": "Một Scheduler Value đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Scheduler Value {{ id }}?"
+      },
+      "detail": {
+        "title": "Scheduler Value"
+      },
+      "id": "ID",
+      "value": "Value",
+      "schedulers": "Schedulers",
+      "schedulerFields": "Scheduler Fields"
+    }
+  }
+}

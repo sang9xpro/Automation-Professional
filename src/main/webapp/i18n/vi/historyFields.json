@@ -1,0 +1,26 @@
+{
+  "automationProfessionalApp": {
+    "historyFields": {
+      "home": {
+        "title": "History Fields",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Thêm mới một History Fields",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật History Fields",
+        "search": "Tìm History Fields",
+        "notFound": "No History Fields found"
+      },
+      "created": "Một History Fields mới được tạo với định danh {{ param }}",
+      "updated": "Một History Fields cập nhật với định danh {{ param }}",
+      "deleted": "Một History Fields đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa History Fields {{ id }}?"
+      },
+      "detail": {
+        "title": "History Fields"
+      },
+      "id": "ID",
+      "fieldName": "Field Name",
+      "historyValues": "History Values"
+    }
+  }
+}

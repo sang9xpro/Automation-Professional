@@ -1,0 +1,29 @@
+{
+  "name": "AccountFields",
+  "fields": [
+    {
+      "fieldName": "fieldName",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "accountValues",
+      "otherEntityRelationshipName": "accountFields",
+      "relationshipName": "accountValues",
+      "otherEntityField": "fieldId"
+    }
+  ],
+  "entityTableName": "account_fields",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "searchEngine": "elasticsearch",
+  "changelogDate": "20210407040013"
+}

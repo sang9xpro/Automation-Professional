@@ -1,0 +1,32 @@
+{
+  "automationProfessionalApp": {
+    "mostOfContent": {
+      "home": {
+        "title": "Most Of Contents",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Thêm mới một Most Of Content",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Most Of Content",
+        "search": "Tìm Most Of Content",
+        "notFound": "No Most Of Contents found"
+      },
+      "created": "Một Most Of Content mới được tạo với định danh {{ param }}",
+      "updated": "Một Most Of Content cập nhật với định danh {{ param }}",
+      "deleted": "Một Most Of Content đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Most Of Content {{ id }}?"
+      },
+      "detail": {
+        "title": "Most Of Content"
+      },
+      "id": "ID",
+      "urlOriginal": "Url Original",
+      "contentText": "Content Text",
+      "postTime": "Post Time",
+      "numberLike": "Number Like",
+      "numberComment": "Number Comment",
+      "mostOfContValues": "Most Of Cont Values",
+      "comment": "Comment",
+      "facebook": "Facebook"
+    }
+  }
+}

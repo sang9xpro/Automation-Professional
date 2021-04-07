@@ -1,0 +1,32 @@
+{
+  "automationProfessionalApp": {
+    "mostOfContent": {
+      "home": {
+        "title": "Most Of Contents",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Most Of Content",
+        "createOrEditLabel": "Create or edit a Most Of Content",
+        "search": "Search for Most Of Content",
+        "notFound": "No Most Of Contents found"
+      },
+      "created": "A new Most Of Content is created with identifier {{ param }}",
+      "updated": "A Most Of Content is updated with identifier {{ param }}",
+      "deleted": "A Most Of Content is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Most Of Content {{ id }}?"
+      },
+      "detail": {
+        "title": "Most Of Content"
+      },
+      "id": "ID",
+      "urlOriginal": "Url Original",
+      "contentText": "Content Text",
+      "postTime": "Post Time",
+      "numberLike": "Number Like",
+      "numberComment": "Number Comment",
+      "mostOfContValues": "Most Of Cont Values",
+      "comment": "Comment",
+      "facebook": "Facebook"
+    }
+  }
+}

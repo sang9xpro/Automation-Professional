@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd">
+    <!--
+        Added the constraints for entity SchedulerTaskDeviceValues.
+    -->
+    <changeSet id="20210407040026-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="scheduler_task_device_id"
+                                 baseTableName="scheduler_task_device_values"
+                                 constraintName="fk_scheduler_task_device_values__scheduler_task_device_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="scheduler_task_device"/>
+
+        <addForeignKeyConstraint baseColumnNames="scheduler_task_device_fields_id"
+                                 baseTableName="scheduler_task_device_values"
+                                 constraintName="fk_scheduler_task_device_values__scheduler_task_device_fie_9a_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="scheduler_task_device_fields"/>
+    </changeSet>
+</databaseChangeLog>

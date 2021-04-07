@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd">
+    <!--
+        Added the constraints for entity SchedulerValue.
+    -->
+    <changeSet id="20210407040017-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="schedulers_id"
+                                 baseTableName="scheduler_value"
+                                 constraintName="fk_scheduler_value__schedulers_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="schedulers"/>
+
+        <addForeignKeyConstraint baseColumnNames="scheduler_fields_id"
+                                 baseTableName="scheduler_value"
+                                 constraintName="fk_scheduler_value__scheduler_fields_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="scheduler_fields"/>
+    </changeSet>
+</databaseChangeLog>

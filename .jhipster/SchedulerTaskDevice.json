@@ -1,0 +1,77 @@
+{
+  "name": "SchedulerTaskDevice",
+  "fields": [
+    {
+      "fieldName": "startTime",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "endTime",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "countFrom",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "countTo",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "point",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "lastUpdate",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "owner",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "SchedulerStatus",
+      "fieldValues": "Open,Processing,Waiting,Completed"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "schedulerTaskDeviceValues",
+      "otherEntityRelationshipName": "schedulerTaskDevice",
+      "relationshipName": "schedulerTaskDeviceValues",
+      "otherEntityField": "schedulerTaskDeviceId"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "schedulers",
+      "otherEntityRelationshipName": "schedulerTaskDevice",
+      "relationshipName": "schedulers"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "tasks",
+      "otherEntityRelationshipName": "schedulerTaskDevice",
+      "relationshipName": "tasks"
+    },
+    {
+      "relationshipType": "many-to-many",
+      "otherEntityName": "devices",
+      "otherEntityRelationshipName": "schedulerTaskDevice",
+      "relationshipName": "devices",
+      "ownerSide": false
+    }
+  ],
+  "entityTableName": "scheduler_task_device",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "searchEngine": "elasticsearch",
+  "changelogDate": "20210407040024"
+}

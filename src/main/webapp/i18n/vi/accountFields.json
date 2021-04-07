@@ -1,0 +1,26 @@
+{
+  "automationProfessionalApp": {
+    "accountFields": {
+      "home": {
+        "title": "Account Fields",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Thêm mới một Account Fields",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Account Fields",
+        "search": "Tìm Account Fields",
+        "notFound": "No Account Fields found"
+      },
+      "created": "Một Account Fields mới được tạo với định danh {{ param }}",
+      "updated": "Một Account Fields cập nhật với định danh {{ param }}",
+      "deleted": "Một Account Fields đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Account Fields {{ id }}?"
+      },
+      "detail": {
+        "title": "Account Fields"
+      },
+      "id": "ID",
+      "fieldName": "Field Name",
+      "accountValues": "Account Values"
+    }
+  }
+}

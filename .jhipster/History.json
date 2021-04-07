@@ -1,0 +1,45 @@
+{
+  "name": "History",
+  "fields": [
+    {
+      "fieldName": "url",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "taskId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "deviceId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "accountId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "lastUpdate",
+      "fieldType": "Instant"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "historyValues",
+      "otherEntityRelationshipName": "history",
+      "relationshipName": "historyValues",
+      "otherEntityField": "historyId"
+    }
+  ],
+  "entityTableName": "history",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "searchEngine": "elasticsearch",
+  "changelogDate": "20210407040006"
+}

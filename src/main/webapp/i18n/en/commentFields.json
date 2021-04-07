@@ -1,0 +1,26 @@
+{
+  "automationProfessionalApp": {
+    "commentFields": {
+      "home": {
+        "title": "Comment Fields",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Comment Fields",
+        "createOrEditLabel": "Create or edit a Comment Fields",
+        "search": "Search for Comment Fields",
+        "notFound": "No Comment Fields found"
+      },
+      "created": "A new Comment Fields is created with identifier {{ param }}",
+      "updated": "A Comment Fields is updated with identifier {{ param }}",
+      "deleted": "A Comment Fields is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Comment Fields {{ id }}?"
+      },
+      "detail": {
+        "title": "Comment Fields"
+      },
+      "id": "ID",
+      "fieldName": "Field Name",
+      "commentValues": "Comment Values"
+    }
+  }
+}

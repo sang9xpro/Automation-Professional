@@ -1,0 +1,26 @@
+{
+  "automationProfessionalApp": {
+    "facebookFields": {
+      "home": {
+        "title": "Facebook Fields",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Thêm mới một Facebook Fields",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Facebook Fields",
+        "search": "Tìm Facebook Fields",
+        "notFound": "No Facebook Fields found"
+      },
+      "created": "Một Facebook Fields mới được tạo với định danh {{ param }}",
+      "updated": "Một Facebook Fields cập nhật với định danh {{ param }}",
+      "deleted": "Một Facebook Fields đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Facebook Fields {{ id }}?"
+      },
+      "detail": {
+        "title": "Facebook Fields"
+      },
+      "id": "ID",
+      "fieldName": "Field Name",
+      "facebookValues": "Facebook Values"
+    }
+  }
+}

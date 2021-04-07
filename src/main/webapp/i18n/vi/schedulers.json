@@ -1,0 +1,33 @@
+{
+  "automationProfessionalApp": {
+    "schedulers": {
+      "home": {
+        "title": "Schedulers",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Thêm mới một Schedulers",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Schedulers",
+        "search": "Tìm Schedulers",
+        "notFound": "No Schedulers found"
+      },
+      "created": "Một Schedulers mới được tạo với định danh {{ param }}",
+      "updated": "Một Schedulers cập nhật với định danh {{ param }}",
+      "deleted": "Một Schedulers đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Schedulers {{ id }}?"
+      },
+      "detail": {
+        "title": "Schedulers"
+      },
+      "id": "ID",
+      "url": "Url",
+      "title": "Title",
+      "otherSource": "Other Source",
+      "count": "Count",
+      "lastUpdate": "Last Update",
+      "owner": "Owner",
+      "status": "Status",
+      "schedulerValue": "Scheduler Value",
+      "schedulerTaskDevice": "Scheduler Task Device"
+    }
+  }
+}

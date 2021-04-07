@@ -1,0 +1,29 @@
+{
+  "name": "CommentFields",
+  "fields": [
+    {
+      "fieldName": "fieldName",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "commentValues",
+      "otherEntityRelationshipName": "commentFields",
+      "relationshipName": "commentValues",
+      "otherEntityField": "feildId"
+    }
+  ],
+  "entityTableName": "comment_fields",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "searchEngine": "elasticsearch",
+  "changelogDate": "20210407040010"
+}

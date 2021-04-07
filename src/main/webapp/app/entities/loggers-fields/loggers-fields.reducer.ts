@@ -1,0 +1,171 @@
+import axios from 'axios';
+import { ICrudSearchAction, ICrudGetAction, ICrudGetAllAction, ICrudPutAction, ICrudDeleteAction } from 'react-jhipster';
+
+import { cleanEntity } from 'app/shared/util/entity-utils';
+import { REQUEST, SUCCESS, FAILURE } from 'app/shared/reducers/action-type.util';
+
+import { ILoggersFields, defaultValue } from 'app/shared/model/loggers-fields.model';
+
+export const ACTION_TYPES = {
+  SEARCH_LOGGERSFIELDS: 'loggersFields/SEARCH_LOGGERSFIELDS',
+  FETCH_LOGGERSFIELDS_LIST: 'loggersFields/FETCH_LOGGERSFIELDS_LIST',
+  FETCH_LOGGERSFIELDS: 'loggersFields/FETCH_LOGGERSFIELDS',
+  CREATE_LOGGERSFIELDS: 'loggersFields/CREATE_LOGGERSFIELDS',
+  UPDATE_LOGGERSFIELDS: 'loggersFields/UPDATE_LOGGERSFIELDS',
+  PARTIAL_UPDATE_LOGGERSFIELDS: 'loggersFields/PARTIAL_UPDATE_LOGGERSFIELDS',
+  DELETE_LOGGERSFIELDS: 'loggersFields/DELETE_LOGGERSFIELDS',
+  RESET: 'loggersFields/RESET',
+};
+
+const initialState = {
+  loading: false,
+  errorMessage: null,
+  entities: [] as ReadonlyArray<ILoggersFields>,
+  entity: defaultValue,
+  updating: false,
+  totalItems: 0,
+  updateSuccess: false,
+};
+
+export type LoggersFieldsState = Readonly<typeof initialState>;
+
+// Reducer
+
+export default (state: LoggersFieldsState = initialState, action): LoggersFieldsState => {
+  switch (action.type) {
+    case REQUEST(ACTION_TYPES.SEARCH_LOGGERSFIELDS):
+    case REQUEST(ACTION_TYPES.FETCH_LOGGERSFIELDS_LIST):
+    case REQUEST(ACTION_TYPES.FETCH_LOGGERSFIELDS):
+      return {
+        ...state,
+        errorMessage: null,
+        updateSuccess: false,
+        loading: true,
+      };
+    case REQUEST(ACTION_TYPES.CREATE_LOGGERSFIELDS):
+    case REQUEST(ACTION_TYPES.UPDATE_LOGGERSFIELDS):
+    case REQUEST(ACTION_TYPES.DELETE_LOGGERSFIELDS):
+    case REQUEST(ACTION_TYPES.PARTIAL_UPDATE_LOGGERSFIELDS):
+      return {
+        ...state,
+        errorMessage: null,
+        updateSuccess: false,
+        updating: true,
+      };
+    case FAILURE(ACTION_TYPES.SEARCH_LOGGERSFIELDS):
+    case FAILURE(ACTION_TYPES.FETCH_LOGGERSFIELDS_LIST):
+    case FAILURE(ACTION_TYPES.FETCH_LOGGERSFIELDS):
+    case FAILURE(ACTION_TYPES.CREATE_LOGGERSFIELDS):
+    case FAILURE(ACTION_TYPES.UPDATE_LOGGERSFIELDS):
+    case FAILURE(ACTION_TYPES.PARTIAL_UPDATE_LOGGERSFIELDS):
+    case FAILURE(ACTION_TYPES.DELETE_LOGGERSFIELDS):
+      return {
+        ...state,
+        loading: false,
+        updating: false,
+        updateSuccess: false,
+        errorMessage: action.payload,
+      };
+    case SUCCESS(ACTION_TYPES.SEARCH_LOGGERSFIELDS):
+    case SUCCESS(ACTION_TYPES.FETCH_LOGGERSFIELDS_LIST):
+      return {
+        ...state,
+        loading: false,
+        entities: action.payload.data,
+        totalItems: parseInt(action.payload.headers['x-total-count'], 10),
+      };
+    case SUCCESS(ACTION_TYPES.FETCH_LOGGERSFIELDS):
+      return {
+        ...state,
+        loading: false,
+        entity: action.payload.data,
+      };
+    case SUCCESS(ACTION_TYPES.CREATE_LOGGERSFIELDS):
+    case SUCCESS(ACTION_TYPES.UPDATE_LOGGERSFIELDS):
+    case SUCCESS(ACTION_TYPES.PARTIAL_UPDATE_LOGGERSFIELDS):
+      return {
+        ...state,
+        updating: false,
+        updateSuccess: true,
+        entity: action.payload.data,
+      };
+    case SUCCESS(ACTION_TYPES.DELETE_LOGGERSFIELDS):
+      return {
+        ...state,
+        updating: false,
+        updateSuccess: true,
+        entity: {},
+      };
+    case ACTION_TYPES.RESET:
+      return {
+        ...initialState,
+      };
+    default:
+      return state;
+  }
+};
+
+const apiUrl = 'api/loggers-fields';
+const apiSearchUrl = 'api/_search/loggers-fields';
+
+// Actions
+
+export const getSearchEntities: ICrudSearchAction<ILoggersFields> = (query, page, size, sort) => ({
+  type: ACTION_TYPES.SEARCH_LOGGERSFIELDS,
+  payload: axios.get<ILoggersFields>(`${apiSearchUrl}?query=${query}${sort ? `&page=${page}&size=${size}&sort=${sort}` : ''}`),
+});
+
+export const getEntities: ICrudGetAllAction<ILoggersFields> = (page, size, sort) => {
+  const requestUrl = `${apiUrl}${sort ? `?page=${page}&size=${size}&sort=${sort}` : ''}`;
+  return {
+    type: ACTION_TYPES.FETCH_LOGGERSFIELDS_LIST,
+    payload: axios.get<ILoggersFields>(`${requestUrl}${sort ? '&' : '?'}cacheBuster=${new Date().getTime()}`),
+  };
+};
+
+export const getEntity: ICrudGetAction<ILoggersFields> = id => {
+  const requestUrl = `${apiUrl}/${id}`;
+  return {
+    type: ACTION_TYPES.FETCH_LOGGERSFIELDS,
+    payload: axios.get<ILoggersFields>(requestUrl),
+  };
+};
+
+export const createEntity: ICrudPutAction<ILoggersFields> = entity => async dispatch => {
+  const result = await dispatch({
+    type: ACTION_TYPES.CREATE_LOGGERSFIELDS,
+    payload: axios.post(apiUrl, cleanEntity(entity)),
+  });
+  dispatch(getEntities());
+  return result;
+};
+
+export const updateEntity: ICrudPutAction<ILoggersFields> = entity => async dispatch => {
+  const result = await dispatch({
+    type: ACTION_TYPES.UPDATE_LOGGERSFIELDS,
+    payload: axios.put(`${apiUrl}/${entity.id}`, cleanEntity(entity)),
+  });
+  return result;
+};
+
+export const partialUpdate: ICrudPutAction<ILoggersFields> = entity => async dispatch => {
+  const result = await dispatch({
+    type: ACTION_TYPES.PARTIAL_UPDATE_LOGGERSFIELDS,
+    payload: axios.patch(`${apiUrl}/${entity.id}`, cleanEntity(entity)),
+  });
+  return result;
+};
+
+export const deleteEntity: ICrudDeleteAction<ILoggersFields> = id => async dispatch => {
+  const requestUrl = `${apiUrl}/${id}`;
+  const result = await dispatch({
+    type: ACTION_TYPES.DELETE_LOGGERSFIELDS,
+    payload: axios.delete(requestUrl),
+  });
+  dispatch(getEntities());
+  return result;
+};
+
+export const reset = () => ({
+  type: ACTION_TYPES.RESET,
+});

@@ -1,0 +1,33 @@
+{
+  "automationProfessionalApp": {
+    "schedulers": {
+      "home": {
+        "title": "Schedulers",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Schedulers",
+        "createOrEditLabel": "Create or edit a Schedulers",
+        "search": "Search for Schedulers",
+        "notFound": "No Schedulers found"
+      },
+      "created": "A new Schedulers is created with identifier {{ param }}",
+      "updated": "A Schedulers is updated with identifier {{ param }}",
+      "deleted": "A Schedulers is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Schedulers {{ id }}?"
+      },
+      "detail": {
+        "title": "Schedulers"
+      },
+      "id": "ID",
+      "url": "Url",
+      "title": "Title",
+      "otherSource": "Other Source",
+      "count": "Count",
+      "lastUpdate": "Last Update",
+      "owner": "Owner",
+      "status": "Status",
+      "schedulerValue": "Scheduler Value",
+      "schedulerTaskDevice": "Scheduler Task Device"
+    }
+  }
+}

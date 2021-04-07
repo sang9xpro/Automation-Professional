@@ -1,0 +1,27 @@
+{
+  "automationProfessionalApp": {
+    "deviceValues": {
+      "home": {
+        "title": "Device Values",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Thêm mới một Device Values",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Device Values",
+        "search": "Tìm Device Values",
+        "notFound": "No Device Values found"
+      },
+      "created": "Một Device Values mới được tạo với định danh {{ param }}",
+      "updated": "Một Device Values cập nhật với định danh {{ param }}",
+      "deleted": "Một Device Values đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Device Values {{ id }}?"
+      },
+      "detail": {
+        "title": "Device Values"
+      },
+      "id": "ID",
+      "value": "Value",
+      "devices": "Devices",
+      "devicesFields": "Devices Fields"
+    }
+  }
+}

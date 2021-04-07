@@ -1,0 +1,26 @@
+{
+  "automationProfessionalApp": {
+    "commentFields": {
+      "home": {
+        "title": "Comment Fields",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Thêm mới một Comment Fields",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Comment Fields",
+        "search": "Tìm Comment Fields",
+        "notFound": "No Comment Fields found"
+      },
+      "created": "Một Comment Fields mới được tạo với định danh {{ param }}",
+      "updated": "Một Comment Fields cập nhật với định danh {{ param }}",
+      "deleted": "Một Comment Fields đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Comment Fields {{ id }}?"
+      },
+      "detail": {
+        "title": "Comment Fields"
+      },
+      "id": "ID",
+      "fieldName": "Field Name",
+      "commentValues": "Comment Values"
+    }
+  }
+}

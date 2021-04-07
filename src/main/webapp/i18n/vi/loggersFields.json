@@ -1,0 +1,26 @@
+{
+  "automationProfessionalApp": {
+    "loggersFields": {
+      "home": {
+        "title": "Loggers Fields",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Thêm mới một Loggers Fields",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Loggers Fields",
+        "search": "Tìm Loggers Fields",
+        "notFound": "No Loggers Fields found"
+      },
+      "created": "Một Loggers Fields mới được tạo với định danh {{ param }}",
+      "updated": "Một Loggers Fields cập nhật với định danh {{ param }}",
+      "deleted": "Một Loggers Fields đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Loggers Fields {{ id }}?"
+      },
+      "detail": {
+        "title": "Loggers Fields"
+      },
+      "id": "ID",
+      "fieldName": "Field Name",
+      "loggersValues": "Loggers Values"
+    }
+  }
+}

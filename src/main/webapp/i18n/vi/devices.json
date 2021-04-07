@@ -1,0 +1,36 @@
+{
+  "automationProfessionalApp": {
+    "devices": {
+      "home": {
+        "title": "Devices",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Thêm mới một Devices",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Devices",
+        "search": "Tìm Devices",
+        "notFound": "No Devices found"
+      },
+      "created": "Một Devices mới được tạo với định danh {{ param }}",
+      "updated": "Một Devices cập nhật với định danh {{ param }}",
+      "deleted": "Một Devices đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Devices {{ id }}?"
+      },
+      "detail": {
+        "title": "Devices"
+      },
+      "id": "ID",
+      "ipAddress": "Ip Address",
+      "macAddress": "Mac Address",
+      "os": "Os",
+      "deviceType": "Device Type",
+      "status": "Status",
+      "lastUpdate": "Last Update",
+      "owner": "Owner",
+      "country": "Country",
+      "deviceValues": "Device Values",
+      "loggers": "Loggers",
+      "accounts": "Accounts",
+      "schedulerTaskDevice": "Scheduler Task Device"
+    }
+  }
+}

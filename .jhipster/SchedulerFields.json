@@ -1,0 +1,29 @@
+{
+  "name": "SchedulerFields",
+  "fields": [
+    {
+      "fieldName": "fieldName",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "schedulerValue",
+      "otherEntityRelationshipName": "schedulerFields",
+      "relationshipName": "schedulerValue",
+      "otherEntityField": "fieldId"
+    }
+  ],
+  "entityTableName": "scheduler_fields",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "searchEngine": "elasticsearch",
+  "changelogDate": "20210407040016"
+}

@@ -1,0 +1,13 @@
+{
+  "automationProfessionalApp": {
+    "DeviceType": {
+      "null": "",
+      "MOBILE": "MOBILE",
+      "COMPUTER": "COMPUTER",
+      "TABLET": "TABLET",
+      "VPS": "VPS",
+      "VMW": "VMW",
+      "ELUMATOR": "ELUMATOR"
+    }
+  }
+}
